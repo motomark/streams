@@ -15,7 +15,7 @@ public class Reduce {
         try {
 
             File inFile = new File(Reduce.class.getClassLoader().getResource("test.txt").getFile());
-            File outFile = new File("/Users/[path]/git/streams/test2.txt");
+            File outFile = new File("/home/ec2-user/git/streams/test2.txt");
             outFile.createNewFile();
 
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(outFile, StandardCharsets.UTF_8)); 
