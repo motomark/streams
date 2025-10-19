@@ -23,4 +23,16 @@ public class TestReduceFriends {
         assertEquals(29, friends.totalCharsInAllNamesUsingReduce(friendList));
     }
 
+    @Test
+    public void testFindLongestNameUsingReduce() {
+        // Use lambda to test the presence of Optional and use the value to assert.
+        friends.findLongestNameUsingReduce(friendList).ifPresent(name -> assertEquals("Hayley", name ));
+    }
+
+    @Test
+    public void testJoinFriends() {
+        assertEquals("HAYLEY, HELEN, ROB, GORDON, WILL, BARRY", friends.joinFriends(friendList));
+    }
+
+
 }
