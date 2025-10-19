@@ -1,4 +1,4 @@
-package com.motomark.streams.chap.one;
+package com.motomark.streams.onetwo;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
