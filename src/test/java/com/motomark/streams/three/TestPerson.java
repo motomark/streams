@@ -13,7 +13,7 @@ import org.junit.Test;
 // See Chapter 3.
 public class TestPerson {
 
-   private List<Person> people;
+   protected List<Person> people;
 
     @Before
     public void init() {
@@ -123,7 +123,7 @@ public class TestPerson {
 
     }
 
-    private void printPeople(String message, List<Person> people) {
+    protected void printPeople(String message, List<Person> people) {
         System.out.println(message);
         people.forEach(System.out::println);
     }
